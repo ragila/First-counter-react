@@ -1,12 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 export default class App extends Component {
   render() {
     return (
-      <div>
-        <Counter nama="Alvin" />
-        <Counter nama="Adetya" />
-        <Counter nama="Sodo" />
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">First Counter React</h1>
+        </header>
+        <Counter />
       </div>
     );
   }
